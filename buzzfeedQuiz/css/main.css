@@ -1,0 +1,221 @@
+@import "normalize.css";
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #F4F4F4;
+  padding: 5px;
+  grid-gap: 5px;
+  border-style: solid;
+  border-color: #183A34;
+  border-width: 5px;
+  margin-right: 50px;
+  margin-left: 50px;
+
+}
+
+.grid-item {
+background-color: #F4F4F4;
+padding: 5px;
+margin-left: 50px;
+margin-right: 50px;
+
+}
+
+
+.header{
+  grid-row:  1 /span 1;
+  grid-column: 1 /span 2;
+  display: block;
+}
+
+.form {
+  grid-row:  2/ span 1 ;
+  grid-column: 1/span 2;
+
+}
+
+
+.tooltip-hidden {
+ display: none;
+ float: right;
+ }
+
+ .quizhide{
+   display: none;
+   grid-row:  4/ span 1 ;
+   grid-column: 1/span 2;
+   background-color: white;
+   border-style: dashed;
+   border-width: 5px;
+   border-color: #D4B7C2;
+   margin-right: 50px;
+   margin-left: 50px;
+
+ }
+
+
+
+ .badgesPop {
+   grid-row: 4 /span 1;
+   grid-column: 2/ span 0;
+   margin-right: 50px;
+   margin-left: 50px;
+
+ }
+
+ img .badgeOnes{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+  .footer {
+   grid-row: 6 /span 1;
+   grid-column: 1/ span 2;
+   background-color:  #D4B7C2;
+   border-style: none;
+   }
+
+ h3 .geez {
+   text-align: center;
+   font-family: 'PT Serif Caption', serif;
+   font-size: 15px;
+   color: #183A34;
+
+ }
+
+
+
+ .hideit{
+   display: none;
+
+
+ }
+
+.tooltip-shown {
+ display: inline;
+ float: right;
+}
+
+
+
+body {
+background-color: #EFF8FB;
+}
+
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 84px;
+  color: #D4B7C2;
+
+
+}
+
+h2{
+  font-family: 'PT Serif Caption', serif;
+  font-size: 15px;
+  color: #183A34;
+  text-decoration: underline;
+}
+
+
+
+h3 {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 15px;
+  color: #183A34;
+}
+
+
+h4 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 45px;
+  color: #D4B7C2;
+  text-transform: underline;
+  text-align: center;
+
+
+}
+
+h5 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 40px;
+  color: #183A34;
+  text-transform: underline;
+  text-align: center;
+  border-style: solid;
+  border-color: #D4B7C2;
+  border-width: 5px;
+  background-color: #EFF8FB;
+  margin-right: 180px;
+  margin-left: 180px;
+
+}
+
+h6 {
+
+  font-family: 'PT Serif Caption', serif;
+  font-size: 40px;
+  color: #D4B7C2;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+p {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 15px;
+  color: #183A34;
+  text-align: center;
+  border-style: solid;
+  border-color: #D4B7C2;
+  border-width: 5px;
+  background-color: #EFF8FB;
+  margin-right: 50px;
+  margin-left: 50px;
+
+}
+
+fieldset{
+background-color: white;
+margin-right: 50px;
+align-items: center;
+margin-left: 50px;
+
+
+}
+
+input {
+  height: 25px;
+  width: 250px;
+  font-size: 15px;
+  color: #183A34;
+}
+
+.rectangle { 
+  width: 200px;
+  height: 100px;
+  background-color: 
+}
+
+
+
+ legend{
+ text-align: left;
+ font-family: 'PT Serif Caption', serif;
+ color: #183A34;
+ background-color: white;
+}
+
+
+img .badgeOnes {
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+}

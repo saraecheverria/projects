@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+  <title>Survey – Sara Echeverria</title>
+
+  <!--Linked CSS-->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--Linked Font-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption|Red+Hat+Display&display=swap" rel="stylesheet">
+
+  <!--Linked Favicon Application -->
+  <link rel="shortcut icon" href="img/phasedIcon.png" />
+
+</head>
+
+<body>
+
+  <div class ="grid">
+
+    <div class = "grid-item header">
+
+      <h1>SUGAR QUIZ</h1>
+
+    </div>
+
+
+    <!--Begin Form-->
+
+    <div class=" grid-item form">
+
+      <form id="myForm" name="playerForm" method="post">
+
+        <fieldset>
+
+          <legend>Personal Information Form</legend>
+          <h2>First Name:</h2>
+
+            <input id = "firstInput" type="text" name="firstname">
+
+            <div id ="firstThree" class ="tooltip-hidden">
+              <img src = "img/check.png" alt="wrong" height = "35px" width = "35px">
+            </div>
+
+            <div id = "hoverMess1" class ="tooltip-hidden">
+              <h3> Please enter a valid first name. (Must contain only letters)</h3>
+            </div>
+
+            <div id="emptyFirstName" class="tooltip-hidden">
+              <h3> <img src = "img/cross.png" alt="wrong" height = "25px" width = "25px"> You must enter a first name. Please try again.</h3>
+            </div>
+
+            <div id = "errorNumber" class ="tooltip-hidden">
+              <h3> <img src = "img/cross.png" alt="wrong" height = "25px" width = "25px"> You did not enter a valid first name. Please try again and enter only letters. </h3>
+            </div>
+
+
+          <h2>Last Name:</h2>
+
+            <input id = "secondInput" type="text" name="lastname">
+
+            <div id ="lastThree" class ="tooltip-hidden">
+              <img src = "img/check.png" alt="wrong" height = "35px" width = "35px">
+            </div>
+
+            <div id = "hoverMess2" class ="tooltip-hidden">
+              <h3> Please enter a valid last name. (Must contain only letters)</h3>
+            </div>
+
+            <div id="emptyLastName" class="tooltip-hidden">
+              <h3> <img src = "img/cross.png" alt="wrong" height = "25px" width = "25px"> You must enter a last name. Please try again. </h3>
+            </div>
+
+            <div id = "lastError" class ="tooltip-hidden">
+              <h3> <img src = "img/cross.png" alt="wrong" height = "25px" width = "25px"> You did not enter a valid last name. Please try again and enter only letters.</h3>
+            </div>
+
+        <h2>Phone Number:</h2>
+
+          <input id="thirdInput" type="text" name="phonenumber">
+
+          <div id ="areaThree" class ="tooltip-hidden">
+            <img src = "img/check.png" alt="wrong" height = "35px" width = "35px">
+          </div>
+
+          <div id="hoverMess3" class="tooltip-hidden">
+            <h3>Please enter a valid phone number! (Must contain numbers and be in the pattern XXX-XXX-XXXX)</h3>
+          </div>
+
+          <div id ="areaTwo" class="tooltip-hidden">
+            <h3><img src = "img/cross.png" alt="wrong" height = "25px" width = "25px">You must enter a phone number. Please try again. </h3>
+          </div>
+
+          <div id="areaOne" class="tooltip-hidden">
+            <h3><img src = "img/cross.png" alt="wrong" height = "25px" width = "25px">You did not enter a valid phone number. Please make sure to enter numbers, and follow the pattern XXX-XXX-XXXX. Try again. </h3>
+          </div>
+
+        <h2>E-mail Address:</h2>
+
+          <input id="fourthInput" type="text" name="emailaddress">
+
+          <div id ="rayThree" class ="tooltip-hidden">
+            <img src = "img/check.png" alt="wrong" height = "35px" width = "35px">
+          </div>
+
+
+          <div id="hoverMess4" class="tooltip-hidden">
+            <h3>Please enter a valid E-mail Address! (Must follow the pattern blah@blah.com)</h3>
+          </div>
+
+          <div id="rayOne" class="tooltip-hidden">
+            <h3><img src = "img/cross.png" alt="wrong" height = "25px" width = "25px">You must enter an E-mail. Please try again. </h3>
+          </div>
+
+          <div id ="rayTwo" class ="tooltip-hidden">
+            <h3><img src = "img/cross.png" alt="wrong" height = "25px" width = "25px">You did not enter a valid E-mail address. Please make sure to enter your email in the pattern blah@blah.com.</h3>
+          </div>
+
+
+        <h2>Server URL:</h2>
+
+          <input id="fifthInput" type="text" name="serveraddress">
+
+          <div id="gapThree" class="tooltip-hidden">
+            <h3><img src = "img/check.png" alt="wrong" height = "35px" width = "35px">
+          </div>
+
+          <div id="hoverMess5" class="tooltip-hidden">
+            <h3>Enter the correct URL used from the host students.cah@ucf.edu. (http://students.cah.ucf.edu/~sa965973) </h3>
+          </div>
+
+          <div id="gapOne" class="tooltip-hidden">
+            <h3><img src = "img/cross.png" alt="wrong" height = "25px" width = "25px">You must enter a Server URL. Please try again.</h3>
+          </div>
+
+          <div id="gapTwo" class="tooltip-hidden">
+            <h3><img src = "img/cross.png" alt="wrong" height = "25px" width = "25px">You did not enter a valid server address. Please try again. Make sure it begins with http:// and contains the ~ symbol.</h3>
+          </div>
+
+
+          <br>
+          <br>
+
+
+          <input type="submit" value="Submit" />
+
+      </fieldset>
+    </form>
+    </div>
+
+    <!--End Form-->
+
+    <br>
+    <br>
+
+    <!--Begin Survey-->
+
+    <div id = "myQuiz" class = "grid-item quizhide">
+
+      <fieldset>
+
+        <legend>Survey</legend>
+        <h4>What Type of Candy Are You?</h4>
+
+      <form id = "myQuiz">
+
+        <fieldset>
+
+
+        <h3>Choose the option that describes you.</h3>
+        <input type="radio" name="question1" value="introvert"><h3>An Introvert</h3> <br>
+        <input type="radio" name="question1" value="extrovert"><h3>An Extrovert</h3><br>
+
+
+
+        </fieldset>
+
+        <br>
+        <br>
+        <br>
+
+
+        <fieldset>
+
+          <h3>Which theme park do you prefer?</h3>
+        <input type="radio" name="question2" value="disney"><h3>Disney</h3><br>
+        <input type="radio" name="question2" value="universal"><h3>Universal</h3><br>
+
+        </fieldset>
+
+        <br>
+        <br>
+        <br>
+
+        <input type="submit" value="Submit" />
+
+      </fieldset>
+
+      <!--End Survey-->
+
+      <!--Begin Badge Displays-->
+
+      <div class = "badgesPOP">
+
+      <div id = "kitkat" class ="hideit">
+        <h5> Kit Kat!</h5>
+        <p> Like these airy crisp waffers wrapped in creamy milk chocolate goodness, you show others how to appreciate
+          the simple things in life. You dance to the beat of your own drum. You find the most happiness in the small
+          things. Often you feel misunderstood. Calm, cool, and collected yet you harbor a lot emotions that go without
+          being spoken of. </p>
+          <img src = "img/kittykat.jpg" alt="candy1" height = "421px" width = "834px" class = "badgeOnes">
+      </div>
+
+
+      <div id = "sourpatchkids" class ="hideit">
+        <h5> Sour Patch Kids!</h5>
+        <p>First they're sour, then they're sweet. Unlike the snack, you have the ability
+          to turn on and off your charm. A master of social situations but you mostly prefer to observe.
+          You have a big imagination and often live in your own world. You are a born leader, able to
+          seperate your emotions from certain situations and make moral choices. </p>
+        <img src = "img/sour.jpg" alt="candy2" height = "600" width = "375px" class = "badgeOnes">
+
+      </div>
+
+      <div id = "lolipop" class ="hideit">
+        <h5> Blow Pop Lolipop! </h5>
+        <p>While vibrant and tough, these fruity sweets are nothing but soft and sticky deep down.
+        You like to have fun and aren't afraid to show it! You go with the flow and live in the moment.
+        At times, your strong energy comes off as intimidating, in fact not everyone can handle you, but those lucky enough
+        to stick around are able to see just how amazing you are.</p>
+        <img src = "img/loli.jpg" class = "badgeOnes">
+
+      </div>
+
+      <div id = "resee" class ="hideit">
+        <h5> Resse's Peanut Butter Cups!</h5>
+        <p>This savory treat is a classic. Much like you, old soul. You are hopeless romantic, unfortunately born
+          into a world where romance is dead. However your passion lives on and makes your personality magnetic. You aren't into surface level
+          stuff and yearn for deeper meanings in life. </p>
+          <img src = "img/puff.png" class = "badgeOnes">
+
+
+      </div>
+
+      <!--End Badge Displays-->
+
+      </div>
+      </div>
+
+      <!--Begin Footer-->
+
+        <div class = "grid item footer">
+
+          <footer>
+
+          <h3 class = "geez"> Created by Sara Echeverria </h3>
+
+          </footer>
+
+      <!--End Footer-->
+
+        </div>
+        </div>
+
+  <!--Linked JS-->
+  <script src="js/process_form.js"></script>
+</body>
+
+</html>
